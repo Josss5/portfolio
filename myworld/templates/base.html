@@ -12,7 +12,7 @@
     </title>
     <meta
       name="description"
-      content="{{ player.full_name }}: {{ player.title }}. Websites that are simple to use and beautiful to see."
+      content="{{ player.full_name }}: {{ player.title }}. Building practical software, IoT, and agricultural innovation projects."
     />
     <link
       rel="canonical"
@@ -25,7 +25,7 @@
     />
     <meta
       property="og:description"
-      content="Website and UI design portfolio: projects, tools and story."
+      content="Technology, leadership, and innovation portfolio."
     />
     <meta
       property="og:url"
@@ -40,8 +40,8 @@
         "@type": "Person",
         "name": "{{ player.full_name|escapejs }}",
         "jobTitle": "{{ player.title|escapejs }}",
-        "alumniOf": "Palawan State University",
-        "sameAs": ["https://github.com/renceCoding"]
+        "alumniOf": "{{ player.university|escapejs }}",
+        "sameAs": ["{{ player.github_url|escapejs }}"]
       }
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />

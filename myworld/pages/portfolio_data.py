@@ -1,114 +1,84 @@
-"""
-Everything written on the portfolio lives here. Edit the text, no HTML needed.
+"""Portfolio content for Josrel Enriquez Ombion.
 
-Projects can ALSO be managed from the Django admin (/admin/ -> Projects).
-If the database has any projects, they replace the PROJECTS list below.
-
-Images live in pages/static/site/img/. To use your own hobby photos, save them with
-the same names (hobby-boxing.png, hobby-badminton.png, hobby-gym.png). Transparent
-PNG cut-outs look best because the three photos overlap each other.
+Keep personal links as placeholders until you are ready to publish them. The
+website reads all portfolio text and project case studies from this file.
 """
 
 PROFILE = {
-    "name": "Francis",
-    "full_name": "Francis G. Poliran",
+    "name": "Josrel",
+    "full_name": "Josrel Enriquez Ombion",
     "title": "Portfolio",
-    "email": "francispoliran437@gmail.com",
-    "github_url": "https://github.com/renceCoding/portfolio-project.git",
-    "github_label": "github.com/renceCoding",
-    "university": "Palawan State University",
-    "resume_url": "",   # e.g. "/static/site/resume.pdf" once you add the file
+    "email": "ombionjosrel@gmail.com",  # Replace before publishing.
+    "github_url": "https://github.com/Josss5",  # Replace before publishing.
+    "github_label": "https://github.com/Josss5",
+    "linkedin_url": "",  # Add a full LinkedIn URL when available.
+    "university": "Palawan State University – Rizal Campus",
+    "resume_url": "",  # e.g. "/static/site/resume.pdf"
 }
 
 HERO = {
-    "headline": ["Designing the web,", "simply beautiful."],
-    "intro": "Hi, I'm Francis, a website and UI designer who also writes the code.",
-    "card_left": {
-        "title": "User-friendly by default",
-        "text": "Clean, visually appealing websites that are easy to use.",
-    },
-    "card_right": {
-        "title": "Design and code",
-        "text": "Figma and Photoshop for the look, Django and JavaScript for the build.",
-    },
-    "badge": "design \u00b7 develop \u00b7 deliver \u00b7 ",
+    "eyebrow": "Technology · Leadership · Innovation",
+    "headline": "Building solutions through technology. Leading through service. Innovating for impact.",
+    "intro": "I am a fourth-year Computer Science student who develops practical software, IoT systems, and innovation projects for real-world needs.",
+    "stats": [("3 years", "University Student Government service"), ("2 projects", "Software and agri-innovation highlights"), ("2026", "YFC MIMAROPA Start-up Provincial Awardee")],
 }
 
 ABOUT = {
-    "heading": "Hi, I'm Francis.",
+    "heading": "A student developer who builds with purpose.",
     "paragraphs": [
-        "I am a designer, proficient in Figma and Photoshop, and also skilled in video editing. "
-        "In addition to my design skills, I am a passionate developer with a strong commitment to continuous learning.",
-        "I strive to create user-friendly and visually appealing websites. My goal is to collaborate with "
-        "clients to bring their visions to life and deliver exceptional digital solutions.",
+        "I am pursuing a Bachelor of Science in Computer Science at Palawan State University – Rizal Campus. My work brings together software development, system design, hardware-software integration, and project coordination.",
+        "Whether I am developing an irrigation monitor, documenting service operations, or exploring agricultural automation, I begin with the people and processes a system needs to support. I aim for practical solutions that are clear, reliable, and ready to improve over time.",
     ],
-    "chips": ["Website designer", "UI designer", "Developer"],
-    # (label, value); a value starting with "mailto:" or "http" becomes a link in the template
-    "facts": [
-        ("Studying at", "Palawan State University"),
-        ("Focus", "Website and UI design"),
-        ("Design tools", "Figma, Photoshop, video editing"),
-        ("Build with", "Django, JavaScript, HTML, CSS"),
-    ],
+    "focus": ["Software development", "IoT & automation", "Agricultural innovation", "Student leadership"],
+    "facts": [("Education", "BSCS, 4th Year"), ("Campus", "Palawan State University – Rizal Campus"), ("Building", "Software, mobile, web, and IoT systems"), ("Leading", "University Student Government")],
 }
 
-HOBBIES = {
-    "heading": "Away from the screen",
-    "text": "When I'm not designing or coding, you'll find me boxing, playing badminton or training at the gym.",
-    "items": [
-        {"id": "boxing", "label": "Boxing", "image": "site/img/hobby-boxing.png"},
-        {"id": "badminton", "label": "Badminton", "image": "site/img/hobby-badminton.png"},
-        {"id": "gym", "label": "Gym", "image": "site/img/hobby-gym.png"},
-    ],
-}
-
-# Glossy 3D tiles (hero + toolkit). `glyph` picks the drawing in the template.
-TOOLS = [
-    {"id": "figma", "label": "Figma", "group": "Design", "glyph": "figma"},
-    {"id": "photoshop", "label": "Photoshop", "group": "Design", "glyph": "ps"},
-    {"id": "django", "label": "Django", "group": "Build", "glyph": "dj"},
-    {"id": "js", "label": "JavaScript", "group": "Build", "glyph": "js"},
-    {"id": "web", "label": "HTML and CSS", "group": "Build", "glyph": "code"},
-    {"id": "video", "label": "Video editing", "group": "Creative", "glyph": "play"},
+SKILL_GROUPS = [
+    {"name": "Programming & development", "items": ["Java", "C#", "Kotlin", "PHP", "C/C++ (Arduino)"]},
+    {"name": "Web development", "items": ["Laravel", "HTML", "CSS", "JavaScript", "Tailwind CSS", "MySQL"]},
+    {"name": "Mobile development", "items": ["Android Studio", "Kotlin", "Jetpack Compose", "Retrofit", "MVVM Architecture"]},
+    {"name": "Hardware & IoT", "items": ["ESP32", "Arduino", "Sensor Integration", "Embedded Systems", "Automated Irrigation", "Hardware-Software Integration"]},
+    {"name": "Design & tools", "items": ["Figma", "Git/GitHub", "Visual Studio Code", "Android Studio"]},
 ]
-
-TOOLKIT = {
-    "heading": "Tools I work with",
-    "groups": [
-        {"name": "Design", "items": ["Figma", "Photoshop", "UI design"]},
-        {"name": "Build", "items": ["Django", "JavaScript", "HTML", "CSS"]},
-        {"name": "Creative", "items": ["Video editing"]},
-    ],
-}
 
 PROJECTS = [
     {
-        "name": "FITPLAN",
-        "description": "This is my recent work for my database class project about HRM or Human Resources Management.",
-        "role": "Database class project",
-        "tech": ["Database design", "HRM"],
-        "image": "site/img/fitplan.webp",
-        "live_url": "", "repo_url": "",
+        "slug": "sibol", "number": "01", "name": "SIBOL", "subtitle": "ESP32-based farm monitoring and automatic irrigation for soil-bedded lettuce cultivation.",
+        "description": "An agricultural technology system that connects environmental sensing, irrigation automation, and Android-based monitoring for lettuce cultivation.",
+        "role": "System planning, hardware integration, firmware, Android development, architecture, and testing", "problem": "Lettuce cultivation needs timely awareness of soil and environmental conditions, while routine watering can be difficult to monitor and adjust consistently.",
+        "solution": "SIBOL combines sensor monitoring with automatic, manual, and scheduled irrigation controls. An Android application provides real-time visibility, historical records, analytics, and watering prediction support.",
+        "process": ["Plan the monitoring and irrigation workflow.", "Integrate ESP32 hardware, sensors, and local Wi-Fi communication.", "Develop the firmware and Android monitoring experience.", "Test irrigation controls, data logging, and system behavior."],
+        "features": ["Soil moisture, temperature, and humidity monitoring", "Automatic, manual, and scheduled irrigation", "Configurable watering duration and soaking intervals", "Android monitoring, historical logs, analytics, and watering prediction"],
+        "tech": ["ESP32", "Arduino/C++", "Kotlin", "Android Studio", "Jetpack Compose", "Retrofit", "SQLite/CSV"],
+        "status": "Project development and testing", "accent": "green", "live_url": "", "repo_url": "",
     },
     {
-        "name": "PALCONNECT",
-        "description": "I created this design using the Figma application and it's one of my favorite web designs for a landing page.",
-        "role": "UI designer",
-        "tech": ["Figma", "Landing page"],
-        "image": "site/img/palconnect.webp",
-        "live_url": "", "repo_url": "",
-    },
-    {
-        "name": "PSU FOOD RESERVATION APP",
-        "description": "An application to reserve food only at Palawan State University. I designed this for my Proposal project.",
-        "role": "UI designer",
-        "tech": ["Figma", "App design"],
-        "image": "site/img/psu-food.webp",
-        "live_url": "", "repo_url": "",
+        "slug": "motoshopgrid", "number": "02", "name": "MotoShopGrid", "subtitle": "Visual Inventory. Precision Service.",
+        "description": "A motorcycle parts inventory and service shop management system for local repair and parts businesses.", "role": "Project developer",
+        "problem": "Motorcycle shops need a clearer way to organize parts, confirm motorcycle compatibility, document service work, and maintain accurate operational records.",
+        "solution": "MotoShopGrid organizes visual parts information, inventory, suppliers, work orders, service documentation, and reporting in one focused operational system. It is intentionally not a point-of-sale system.",
+        "process": ["Define an inventory and service-focused workflow.", "Model parts, stock movements, suppliers, compatibility, and work orders.", "Build role-aware administration and operational views.", "Design documentation and backup features for day-to-day shop use."],
+        "features": ["Visual parts catalogue and compatibility information", "Inventory, stock adjustments, restocking, and suppliers", "Work orders, service notes, and labor-cost documentation", "Role-based access, reporting, and backup management"],
+        "tech": ["Laravel 13", "PHP 8.4+", "MySQL", "Blade", "Tailwind CSS 4", "Vite", "JavaScript"],
+        "status": "In development", "accent": "orange", "live_url": "", "repo_url": "",
     },
 ]
 
+LEADERSHIP = {
+    "heading": "Leading through service and continuity.",
+    "text": "My University Student Government journey has taught me to represent students responsibly, manage organizational work with care, and prepare the next group of leaders to continue the work.",
+    "theme": "Continuing the Legacy, Empowering New Leaders.",
+    "timeline": [("01", "Legislative Secretary", "Appointed", "Supported legislative work and organizational documentation."), ("02", "Student Government Senator", "Elected", "Represented student concerns through governance and policy work."), ("03", "USG President", "Elected", "Led student representation, programs, coordination, budget preparation, and organizational management.")],
+    "responsibilities": ["Student representation and governance", "University activity planning and coordination", "Budget preparation and resource management", "Resolution and policy drafting and review", "Coordination with administrators, local officials, and external stakeholders", "Student development programs, assemblies, and campus events"],
+}
+
+ACHIEVEMENTS = [
+    ("Leadership", "Three years in the University Student Government", "Appointed Legislative Secretary · Elected Senator · Elected President"),
+    ("Innovation", "SIBOL agricultural IoT system", "Farm monitoring and irrigation automation for lettuce cultivation"),
+    ("Development", "MotoShopGrid", "Inventory visibility and service-management system for motorcycle shops"),
+]
+
 CONTACT = {
-    "heading": "Let's build something remarkable together.",
-    "text": "Tell me about your idea, your project or your team. I read every message.",
+    "heading": "Let’s connect and build something useful.",
+    "text": "I welcome opportunities for internships, collaborations, project conversations, and technology initiatives.",
 }

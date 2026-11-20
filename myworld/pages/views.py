@@ -29,10 +29,10 @@ class HomePageView(TemplateView):
             profile=data.PROFILE,
             hero=data.HERO,
             about=data.ABOUT,
-            hobbies=data.HOBBIES,
-            tools=data.TOOLS,
-            toolkit=data.TOOLKIT,
+            skill_groups=data.SKILL_GROUPS,
             projects=get_projects(),
+            leadership=data.LEADERSHIP,
+            achievements=data.ACHIEVEMENTS,
             contact=data.CONTACT,
             contact_url=reverse("contact"),
         )
